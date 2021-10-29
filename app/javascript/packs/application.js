@@ -7,7 +7,13 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import UIkit from 'uikit'
+import Icons from 'uikit/dist/js/uikit-icons'
+import "./application.sass"
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+// loads the Icon plugin
+UIkit.use(Icons);
