@@ -7978,6 +7978,7 @@ fsevents@~2.3.2:
     postcss: latest
     tailwindcss: latest
     turbolinks: ^5.2.0
+    uikit: ^3.8.0
     webpack: ^4.46.0
     webpack-cli: ^3.3.12
     webpack-dev-server: ^3
@@ -9438,6 +9439,13 @@ fsevents@~2.3.2:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: 33b39f3d0e8463985eeaeeacc3cb2e28bc3dfaf2a5ed219628c0b629d5d7b810b0eb2165f9f607c34871d5daa92ba1dc69f49051cf7d578b4cbd26c340b9d1b1
+  languageName: node
+  linkType: hard
+
+"uikit@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "uikit@npm:3.8.0"
+  checksum: 701bfea5472bfd05ace14e3cda1b8be09998497ef9d92782737490afe0a867a9c3eafdcd87a94bb2a8fe229d02a52c747a6ad3f0171688a7ba37c0a530d0d6ae
   languageName: node
   linkType: hard
 
