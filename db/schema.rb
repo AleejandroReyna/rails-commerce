@@ -13,10 +13,11 @@
 ActiveRecord::Schema.define(version: 2021_10_29_052056) do
 
   create_table "users", charset: "utf8", force: :cascade do |t|
-    t.string "email"
-    t.string "password_digest"
+    t.string "email", null: false
+    t.string "password_digest", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "unique_emails", unique: true
   end
 
 end
