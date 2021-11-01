@@ -12,15 +12,15 @@
             url: create_user_path do |f| %>
 
             <div class="uk-margin-bottom">
-              <label for="user[email]" class="uk-form-label">Email: </label>
+              <%= f.label :email, class: 'uk-form-label'%>
               <%= f.input :email %>
             </div>
             <div class="uk-margin">
-              <label for="user[password]" class="uk-form-label">Password: </label>
+              <%= f.label :password, class: 'uk-form-label'%>
               <%= f.input :password %>
             </div>
             <div class="uk-margin">
-              <label for="user[password_confirmation]" class="uk-form-label">Password Confirmation: </label>
+              <%= f.label :password_confirmation, class: 'uk-form-label'%>
               <%= f.input :password_confirmation %>
             </div>
             <div class="uk-margin uk-text-center">
