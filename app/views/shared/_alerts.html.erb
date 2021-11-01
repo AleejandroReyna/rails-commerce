@@ -1,0 +1,10 @@
+<% if not flash.empty? %>
+  <div class="uk-container">
+    <% flash.each do |type, msg| %>
+      <div class="alert alert-info">
+        <%= msg %>
+        <%= type %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

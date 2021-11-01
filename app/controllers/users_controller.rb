@@ -9,7 +9,8 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path, notice: 'Successfully created account'
     else
-      render :new, alert: "Check your data and try again"
+      flash[:error] = "Check your data and try again"
+      render :new
     end
   end
 
