@@ -6,7 +6,7 @@
           <h1>Sign Up</h1>
         </div>
         <div class="uk-card-body">
-          <%= simple_form_for @user, 
+          <%= simple_form_for @user,
             defaults: { wrapper_html: { class: 'uk-form-controls' }, label: false, input_html: {class: 'uk-input'} },
             html: {class: 'uk-form-stacked'},
             url: create_user_path do |f| %>
@@ -28,7 +28,7 @@
                 <a href="#" class="uk-button uk-button-default">Cancel</a>
                 <%= f.submit 'Sign Up', class: 'uk-button uk-button-primary' %>
               </div>
-              <p class="uk-align-center">Do you have already an account? <a class="uk-link-muted" href="#">Login Here</a></p>
+              <p class="uk-align-center">Do you have already an account? <a class="uk-link-muted" href="#">Login here</a>...</p>
             </div>
           <% end %>
         </div>
