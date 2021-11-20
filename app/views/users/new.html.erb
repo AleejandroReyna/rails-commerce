@@ -28,7 +28,7 @@
                 <a href="#" class="uk-button uk-button-default">Cancel</a>
                 <%= f.submit 'Sign Up', class: 'uk-button uk-button-primary' %>
               </div>
-              <p class="uk-align-center">Do you have already an account? <a class="uk-link-muted" href="#">Login here</a>...</p>
+              <p class="uk-align-center">Do you have already an account? <%= link_to "Login here", sign_in_path, class: "uk-link-muted" %>...</p>
             </div>
           <% end %>
         </div>
