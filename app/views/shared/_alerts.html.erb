@@ -1,0 +1,24 @@
+<% if not flash.empty? %>
+  <div class="uk-container">
+    <% flash.each do |type, msg| 
+      case type
+        when 'notice'
+          alert_class = "uk-alert-success"
+        when 'info'
+          alert_class = "uk-alert-primary"
+        when 'warning'
+          alert_class = "uk-alert-warning"
+        when 'error'
+          alert_class = "uk-alert-danger"
+        else
+          alert_class = ""
+      end
+    %>
+        <div class="<%= alert_class%>  uk-margin-small-top uk-margin-small-bottom" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p><%= msg %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

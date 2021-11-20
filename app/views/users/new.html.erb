@@ -1,0 +1,38 @@
+<div class="uk-container">
+  <div class="uk-flex uk-flex-center">
+    <div class="uk-width-1-2">
+      <div class="uk-card uk-card-default uk-margin-large-top">
+        <div class="uk-card-header">
+          <h1>Sign Up</h1>
+        </div>
+        <div class="uk-card-body">
+          <%= simple_form_for @user,
+            defaults: { wrapper_html: { class: 'uk-form-controls' }, label: false, input_html: {class: 'uk-input'} },
+            html: {class: 'uk-form-stacked'},
+            url: create_user_path do |f| %>
+
+            <div class="uk-margin-bottom">
+              <%= f.label :email, class: 'uk-form-label'%>
+              <%= f.input :email %>
+            </div>
+            <div class="uk-margin">
+              <%= f.label :password, class: 'uk-form-label'%>
+              <%= f.input :password %>
+            </div>
+            <div class="uk-margin">
+              <%= f.label :password_confirmation, class: 'uk-form-label'%>
+              <%= f.input :password_confirmation %>
+            </div>
+            <div class="uk-margin uk-text-center">
+              <div>
+                <a href="#" class="uk-button uk-button-default">Cancel</a>
+                <%= f.submit 'Sign Up', class: 'uk-button uk-button-primary' %>
+              </div>
+              <p class="uk-align-center">Do you have already an account? <%= link_to "Login here", sign_in_path, class: "uk-link-muted" %>...</p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
